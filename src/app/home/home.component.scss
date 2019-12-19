@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 :host {
   display: block;
   background-color: white;
@@ -9,6 +10,28 @@
   margin: 15px 80px 15px 80px;
 }
 
+h1 {
+  font-size: $font-size-title;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+h1:hover:after {
+  width: 100%;
+}
+.floated-image{
+  float: right;
+}
+
 img {
-  height: 150px;
+  height: 250px;
 }

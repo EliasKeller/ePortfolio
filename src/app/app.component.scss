@@ -38,8 +38,11 @@
 footer {
   background-color: $second-background-color;
   width: 100%;
-  height: 300px;
   color: $second-font-color;
+
+}
+
+.footer-container{
   display: flex;
   flex-direction: row;
 }
@@ -48,6 +51,7 @@ footer {
   width: 50%;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 footer > div > h1 {
@@ -56,4 +60,13 @@ footer > div > h1 {
 
 .footer-right-content > p {
   line-height: 5px;
+}
+
+.footer-copy-right{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $second-font-color;
+  color: $second-background-color;
+  font-weight: bold;
 }
