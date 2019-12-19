@@ -1,5 +1,59 @@
 @import '../variables.scss';
 
-header {
+.mat-tab-header{
+  position: sticky !important;
+  top: 0;
+  z-index: 2;
+}
+
+.mat-tab-labels {
+  position: sticky;
+  top: 0;
+  height: 65px;
   background-color: $second-background-color;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mat-tab-label {
+  font-size: $font-size-header;
+  color: $second-font-color !important;
+  height: 100% !important;
+}
+
+.mat-tab-label.mat-tab-label-active {
+  color: $second-font-color !important;
+}
+
+.mat-ink-bar {
+  background-color: $second-font-color !important;
+  height: 5px !important;
+}
+
+.mat-tab-body-content {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: $second-background-color;
+  width: 100%;
+  height: 300px;
+  color: $second-font-color;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left-container, .footer-right-container{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+footer > div > h1 {
+  font-size: $font-size-footer;
+}
+
+.footer-right-content > p {
+  line-height: 5px;
 }
