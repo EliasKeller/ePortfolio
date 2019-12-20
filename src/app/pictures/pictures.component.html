@@ -2,16 +2,8 @@
   <div>
     <h1>Fotos</h1>
   </div>
-  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-    magna aliquyam erat, sed diam
-    voluptua.
-    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-    Lorem ipsum dolor sit amet. Lorem ipsum
-    dolor
-    sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-    erat, sed diam voluptua. At vero eos et
-    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-    sit amet.</p>
+  <p>Dieses Projekt beinhaltet auch das Bearbeiten von Fotos. Aus diesem Grund habe ich drei Fotos aufgenomen. Das erste Bildet einen alten Fussballschuh von mir ab.
+  Auf der zweiten Aufnahem besigen wir den FC Appenzell. Ich kann mich erinnern dies war ein extrem heisser Tag</p>
 
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
     magna aliquyam erat, sed diam
@@ -55,9 +47,20 @@
     erat, sed diam voluptua. At vero eos et
     accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
     sit amet.</p>
-  <img [src]="compare1" (click)="changeImage1()"/>
-  <img [src]="compare2" (click)="changeImage2()"/>
-  <img [src]="compare3" (click)="changeImage3()"/>
+  <div class="show-picture-container">
+    <img [src]="compare1Default"/>
+    <img [src]="compare1Edit"/>
+  </div>
+
+  <div class="show-picture-container">
+  <img [src]="compare2Default"/>
+  <img [src]="compare2Edit"/>
+  </div>
+
+  <div class="show-picture-container">
+  <img [src]="compare3Default"/>
+  <img [src]="compare3Edit"/>
+  </div>
 
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
     magna aliquyam erat, sed diam

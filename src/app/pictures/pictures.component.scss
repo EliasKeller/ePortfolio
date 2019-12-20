@@ -30,8 +30,14 @@ h1:hover:after {
   width: 100%;
 }
 
+.show-picture-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 img{
-  height: 450px;
+  height: 400px;
 }
 
 @media (max-width: 620px) {
@@ -41,6 +47,10 @@ img{
 
   .picture-container{
     margin: 15px 50px 40px 50px;
+  }
+
+  .show-picture-container{
+    flex-direction: column;
   }
 
 }
