@@ -8,7 +8,6 @@
 
 .video-container{
   margin: 15px 100px 50px 100px;
-
 }
 
 h1 {
@@ -29,12 +28,9 @@ h1:after {
 h1:hover:after {
   width: 100%;
 }
-.floated-image{
-  float: right;
-}
 
-img {
-  margin-left: 40px;
-  margin-bottom: 20px;
-  height: 250px;
+.youtube-video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
