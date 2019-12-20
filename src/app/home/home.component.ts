@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  private logoFCB = './assets/images/logoFCB.jpg';
-  private logo = './assets/images/Logo.svg';
+  public logoFCB = './assets/images/logoFCB.jpg';
+  public logo = './assets/images/Logo.svg';
   constructor() { }
 
   ngOnInit() {

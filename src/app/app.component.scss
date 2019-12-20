@@ -73,6 +73,17 @@ footer {
   padding-bottom: 20px;
 }
 
+.footer-left-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+mat-icon{
+  margin-right: 4px;
+  font-size: $font-size-default;
+}
+
 h1 {
   font-size: $font-size-footer;
 }
@@ -88,6 +99,10 @@ h1 {
   background-color: $second-font-color;
   color: $second-background-color;
   font-weight: bold;
+}
+
+.copyright{
+  display: flex;
 }
 
 

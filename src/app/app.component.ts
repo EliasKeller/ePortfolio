@@ -7,10 +7,10 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  private title = 'ePortfolio';
-  private logo = 'assets/images/Logo.svg';
+  public title = 'ePortfolio';
+  public logo = 'assets/images/Logo.svg';
 
-  private goToTop(): void {
+  public goToTop(): void {
     const scrollToTop = window.setInterval(() => {
       const pos = window.pageYOffset;
       if (pos > 0) {
