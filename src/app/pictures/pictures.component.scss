@@ -33,11 +33,39 @@ h1:hover:after {
 .show-picture-container{
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+mat-icon{
+  font-size:50px;
+}
+
+.arrow_downward{
+  display: none;
 }
 
 img{
   height: 400px;
+}
+
+@media (max-width: 1700px) {
+  .show-picture-container{
+    flex-direction: column;
+    height: 1000px;
+    margin-bottom: 60px;
+  }
+  
+  .arrow_forward{
+    display: none;  
+  }
+  
+  .arrow_downward{
+    display: inline-block;
+  }
+
+
 }
 
 @media (max-width: 620px) {
@@ -49,10 +77,6 @@ img{
     margin: 15px 50px 40px 50px;
   }
 
-  .show-picture-container{
-    flex-direction: column;
-  }
-
 }
 
 @media (max-width: 550px) {
@@ -62,5 +86,14 @@ img{
 
   h1 {
     font-size: $font-size-header-small;
+  }
+
+  .show-picture-container{
+    height: 700px;
+
+  }
+
+  img{
+    height: 300px;
   }
 }
