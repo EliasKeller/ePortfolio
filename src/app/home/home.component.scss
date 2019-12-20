@@ -38,3 +38,37 @@ img {
   margin-bottom: 20px;
   height: 250px;
 }
+
+
+@media (max-width: 620px) {
+  .floated-image{
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  img{
+    margin: 0;
+  }
+
+  :host {
+    width: 100%;
+  }
+
+  .home-container{
+    margin: 15px 50px 40px 50px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .home-container{
+    margin: 15px 30px 30px 30px;
+  }
+
+  h1 {
+    font-size: $font-size-header-small;
+  }
+}
+

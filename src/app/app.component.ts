@@ -7,5 +7,6 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'ePortfolio';
+  private title = 'ePortfolio';
+  private logo = 'assets/images/Logo.svg';
 }
