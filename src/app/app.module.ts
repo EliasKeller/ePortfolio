@@ -10,12 +10,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VideoComponent } from './video/video.component';
 import {YouTubePlayerModule} from '@angular/youtube-player';
+import { PicturesComponent } from './pictures/pictures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VideoComponent
+    VideoComponent,
+    PicturesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+:host {
+  display: block;
+  background-color: white;
+  width: 80%;
+  filter: drop-shadow(6px 0px 9px grey);
+}
+
+.picture-container{
+  margin: 15px 100px 50px 100px;
+}
+
+h1 {
+  font-size: $font-size-title;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+h1:hover:after {
+  width: 100%;
+}
+
+img{
+  height: 450px;
+}
+
+@media (max-width: 620px) {
+  :host {
+    width: 100%;
+  }
+
+  .picture-container{
+    margin: 15px 50px 40px 50px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .picture-container{
+    margin: 15px 30px 30px 30px;
+  }
+
+  h1 {
+    font-size: $font-size-header-small;
+  }
+}
