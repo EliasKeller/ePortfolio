@@ -40,6 +40,19 @@
 }
 
 
+#floating-button{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color: $title-font-color;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
 footer {
   background-color: $second-background-color;
   width: 100%;
@@ -97,7 +110,6 @@ h1 {
   .mat-icon-button {
     display: inline-block;
   }
-
 
   footer{
     display: flex;
